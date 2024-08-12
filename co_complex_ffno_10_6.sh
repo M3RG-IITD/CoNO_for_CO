@@ -1,0 +1,25 @@
+python ~path/exp_carbon.py \
+  --data-path ~path/data \
+  --ntrain 3000 \
+  --ntest 500 \
+  --ntotal 3500 \
+  --in_dim 10 \
+  --out_dim 1 \
+  --h 140 \
+  --w 124 \
+  --h-down 1 \
+  --w-down 1 \
+  --T-in 10 \
+  --T-out 6 \
+  --batch-size 32 \
+  --learning-rate 0.001 \
+  --model complex_FFNO_2D \
+  --d-model 20 \
+  --num-basis 12 \
+  --num-token 4 \
+  --patch-size 4,4 \
+  --padding 0,0 \
+  --model-save-path ./checkpoints/carbon \
+  --model-save-name complex_ffno_2D_10_6.pt \
+  --project-name Carbon-Monoxide \
+  --run-name complex_FFNO_2D_10_6
